@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Лена Макарова](https://up.htmlacademy.ru/htmlcss/34/user/2081937).
-* Наставник: Николай Думчев.
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol-fw).
 
 ---
 

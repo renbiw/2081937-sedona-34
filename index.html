@@ -6,13 +6,17 @@
   </head>
   <body>
     <header class="page-header"> 
-      <img class="logo" src="" alt="Логотип">
+      <img class="logo" href="htmlacademy.ru" src="" alt="Логотип" width="138px" height="70px">
       <nav class="navigation"> 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
-            <a class="navigation-link" href="#">Гостиницы</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li> 
         </ul>
         <ul class="navigation-list navigation-user">
@@ -22,19 +26,33 @@
                 Поиск
               </span>
             </a>
+          </li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Избранное
               </span>
             </a>
-            <button>ХОЧУ СЮДА!</button>
+          </li>
+          <li class="navigation-item">
+              <a class="button button-offer" href="#">Хочу сюда</a>
           </li> 
         </ul>
       </nav>
     </header>
     <main class="main-index">
       <section class="welcome_picture">
-        <img class="main-welcome-pic" src="" alt="Приветствующий логотип Седона">
+        <ul class = "welpic-list">
+          <li class="welpic-item">
+            <img class="main-sedona-pic" src="" alt="О Седоне" width="456.7px" height="212.77px">
+          </li>
+          <li class="welpic-item">
+            <img class="main-welcome-pic" src="" alt="Добро пожаловать" width="187.7px" height="44.7px">
+          </li>
+          <li class="welpic-item">
+            <img class="main-desctiption-pic" src="" alt="Описание" width="256px" height="28.78px">
+          </li>
+      </ul>
       </section>
       <section class="introduction">
         <h1 class="main-introduction">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -84,7 +102,66 @@
           </li>
         </ul>
       </section>
+      <section class="search-hostel">
+        <h1 class="search-title">Заинтересовались?</h1>
+        <p class = "search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
+        <a class="button button-search" href="catalog.html">Поиск гостиницы в Седоне</a>
+      </section>
+
+      <form class="searching-form" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="searching-title">Поиск гостиницы в Седоне</h2>
+        <span class='button-close'></span> 
+        <p class="searching-form-date-in">
+          <label class="form-label" for="searching-date-in">Дата заезда</label>
+          <input type="text" id="searching-date-in" name="searching-date-in" value="27 апреля 2020">
+        </p>
+        <p class="searching-form-date-out">
+          <label class="form-label" for="searching-date-out">Дата выезда</label>
+          <input type="text" id="searching-date-out" name="searching-date-out" value="1 сентября 2021">
+        </p>
+        <div class="adults-adults"> 
+            <label class="form-label" for="amount-of-adults">Взрослые:</label>       
+            <button class="amount_minus">-</button>
+            <input type="text" id="amount-of-adults" name="amount-of-adults" value="2">
+            <button class="amount_plus">+</button>
+        </div>
+        <div class="adults-children"> 
+          <label class="form-label" for="amount-of-children">Дети:</label>       
+          <button class="amount_minus">-</button>
+          <input type="text" id="amount-of-adults" name="amount-of-adults" value="1">
+          <button class="amount_plus">+</button>
+      </div>
+
+        <button class="button" type="submit">Найти</button>
+      </form>      
+
+      <section class="subs-email">   
+        <h1 class="subs-title">Подпишитесь на рассылку</h1>
+        <p class="subs-content">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subs-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="subs-form-name">
+            <input class="subs-field" type="text" id="subs-email-name" name="subs-email-name" placeholder="Ваш e-mail">
+          </p>
+          <button class="submite-button" type="submit">Подписаться</button>
+        </form>
+      </section>  
     </main>
+
+    <footer class="page-footer">
+      <ul class="footer-social-list">
+          <li class="footer-social-item">
+              <img class="logo" href="#" src="" alt="вк ссылка">
+          </li>
+          <li class="footer-social-item">
+              <img class="logo" href="#" src="" alt="телеграмм ссылка">
+          </li>
+          <li class="footer-social-item">
+              <img class="logo" href="#" src="" alt="ютуб ссылка">
+          </li>
+      </ul>
+      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <img class="logo" href="htmlacademy.ru" src="" alt="Логотип академии">
+  </footer>
 
   </body>
 </html>

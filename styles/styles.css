@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "PT Sans";
+    
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/pt-sans-italic.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  /* PT Sans Narrow */
+@font-face {
+    font-family: "PT Sans Narrow";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+  body {
+    font-family: "PT Sans", sans-serif;
+  
+    font-size: 16px;
+    line-height: 24px;
+    
+  }
+.advantages-item:nth-child(1){
+    background-color: #82B3D3;    
+
+}
+.advantages-item:nth-child(7){
+    background-color: #82B3D3;    
+
+}
+.advantages-item:nth-child(3){
+    background-color: #83B3D3;    
+
+}
+.advantages-item:nth-child(5){
+    background-color: #83B3D3;    
+
+}
+.advantages-item:nth-child(8){
+    background-color: #83B3D3;    
+
+}
+.advantages-item:nth-child(10){
+    background-color: #83B3D3;    
+
+}
+.advantages-item:nth-child(9){
+    background-color: #83B3D3;    
+
+}
+.advantages-item:nth-child(4){
+    background-color: #FFFFFF;    
+
+}

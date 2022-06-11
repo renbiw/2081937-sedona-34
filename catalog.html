@@ -36,10 +36,15 @@
         </ul>
       </header>
     <main class="main-catalog">
-        <h1>Гостиницы Седоны</h1>        
-        <a class="home-outs" href="#">Значок домика</a>     
-        <span class="item-arrow">Стрелочка</span>
-        <a href="#">Гостиницы</a>               
+        <h1>Гостиницы Седоны</h1> 
+        <ul>     
+            <li>
+                <a class="home-outs" href="#">Главная</a>  
+            </li>
+            <li>
+                <a href="#">Гостиницы</a>    
+            </li>      
+        </ul>  
         <section class="filter-content">
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="infra">
@@ -64,12 +69,6 @@
                     <legend>Стоимость, ₽:</legend>
                         <label class="cost-choosing-from">От <input type="number" name="from" value="0" id="from-value"></label>
                         <label class="cost-choosing-to">До <input type="number" name="to" value="9000" id="to-value"></label>
-                        <div id="rectangle1"></div>
-                        <div id="rectangle2"></div>
-                        <div id="line5"></div>
-                        <div id="line4"></div>
-                        <div id="line3"></div>
-                        <div id="rectangle4"></div>
                         <button type="submit" class="button button-apply-filter" name="button-apply">Применить</button>
                         <button type="reset" class="button button-reset-filter" name="button-reset">Сбросить</button>
                 </fieldset>            
@@ -141,7 +140,7 @@
                         <img src="images/hotel-3.jpg" width="300" height="211" alt="Desert" >
                     </p>                 
                     <div class="item-description">
-                        <h1 class="description-header"><a href="#">Desert Quail Inn</a></h1>
+                        <span class="description-header"><a href="#">Desert Quail Inn</a></span>
                         <div class="item-text">
                           <span>Гостиница</span>
                           <span>От 2500 ₽</span>
@@ -181,27 +180,21 @@
                 <ul class="pagination-list">
                     <li class="pagination-item">
                         <a href="#">1</a>
-                        <div id="rectangle60"></div>
                     </li>
                     <li class="pagination-item">
                         <a href="#">2</a>
-                        <div id="rectangle9"></div>
                     </li>
                     <li class="pagination-item">
                         <a href="#">3</a>
-                        <div id="rectangle8"></div>
                     </li>
                     <li class="pagination-item">
                         <a href="#">4</a>
-                        <div id="rectangle54"></div>
                     </li>
                     <li class="pagination-item">
                         <a href="#">...</a>
-                        <div id="rectangle10"></div>
                     </li>
                     <li class="pagination-item">
                         <a href="#">10</a>
-                        <div id="rectangle11"></div>
                     </li>
                 </ul>
                 <select class="select-amount" aria-label="Отбор">

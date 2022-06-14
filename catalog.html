@@ -31,49 +31,51 @@
               <a class="navigation-link item-fav" href="#">Избранное</a>
             </li>
             <li class="navigation-item">
-                <a class="button button-offer" href="#">Хочу сюда</a>
+                <a class="button button-offer" href="#">Хочу сюда!</a>
             </li> 
         </ul>
       </header>
     <main class="main-catalog">
-        <h1>Гостиницы Седоны</h1> 
-        <ul>     
-            <li>
-                <a class="home-outs" href="#">Главная</a>  
-            </li>
-            <li>
-                <a href="#">Гостиницы</a>    
-            </li>      
-        </ul>  
-        <section class="filter-content">
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <fieldset class="infra">
-                    <legend>Инфраструктура: </legend>
-                    <label for="checkbox1">Бассейн</label>
-                    <input class="check-input" type="checkbox" name="waterpool" value="Бассейн" id="checkbox1" checked>
-                    <label for="checkbox2">Парковка</label>
-                    <input class="check-input" type="checkbox" name="parking" value="Парковка" id="checkbox2" checked>
-                    <label for="checkbox3">Wi-Fi</label>
-                    <input class="check-input" type="checkbox" name="WiFi" value="Wi-Fi" id="checkbox3">                     
-                </fieldset>
-                <fieldset class="type-of-apart">
-                    <legend>Тип Жилья:</legend>
-                    <label for="control1">Гостиница</label>
-                    <input class="control-input" type="radio" name="apart" value="Гостиница" id="control1" checked>
-                    <label for="control2">Мотель</label>
-                    <input class="control-input" type="radio" name="apart" value="Мотель" id="control2" >
-                    <label for="control3">Аппартаменты</label>
-                    <input class="control-input" type="radio" name="apart" value="Аппартаменты" id="control3" >                            
-                </fieldset>
-                <fieldset class="filter-cost-title">
-                    <legend>Стоимость, ₽:</legend>
-                        <label class="cost-choosing-from">От <input type="number" name="from" value="0" id="from-value"></label>
-                        <label class="cost-choosing-to">До <input type="number" name="to" value="9000" id="to-value"></label>
-                        <button type="submit" class="button button-apply-filter" name="button-apply">Применить</button>
-                        <button type="reset" class="button button-reset-filter" name="button-reset">Сбросить</button>
-                </fieldset>            
-            </form>
-        </section>
+        <div class="field-with-backgr">
+            <h1>Гостиницы Седоны</h1> 
+            <ul class="breadcrumbs">     
+                <li>
+                    <a class="home-outs" href="#">Главная</a>  
+                </li>
+                <li>
+                    <a>Гостиницы</a>    
+                </li>      
+            </ul>  
+            <section class="filter-content">
+                <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                    <fieldset class="infra">
+                        <legend>Инфраструктура: </legend>
+                        <label for="checkbox1">Бассейн</label>
+                        <input class="check-input" type="checkbox" name="waterpool" value="Бассейн" id="checkbox1" checked>
+                        <label for="checkbox2">Парковка</label>
+                        <input class="check-input" type="checkbox" name="parking" value="Парковка" id="checkbox2" checked>
+                        <label for="checkbox3">Wi-Fi</label>
+                        <input class="check-input" type="checkbox" name="WiFi" value="Wi-Fi" id="checkbox3">                     
+                    </fieldset>
+                    <fieldset class="type-of-apart">
+                        <legend>Тип Жилья:</legend>
+                        <label for="control1">Гостиница</label>
+                        <input class="control-input" type="radio" name="apart" value="Гостиница" id="control1" checked>
+                        <label for="control2">Мотель</label>
+                        <input class="control-input" type="radio" name="apart" value="Мотель" id="control2" >
+                        <label for="control3">Аппартаменты</label>
+                        <input class="control-input" type="radio" name="apart" value="Аппартаменты" id="control3" >                            
+                    </fieldset>
+                    <fieldset class="filter-cost-title">
+                        <legend>Стоимость, ₽:</legend>
+                            <label class="cost-choosing-from">От <input type="number" name="from" value="0" id="from-value"></label>
+                            <label class="cost-choosing-to">До <input type="number" name="to" value="9000" id="to-value"></label>
+                            <button type="submit" class="button button-apply-filter" name="button-apply">Применить</button>
+                            <button type="reset" class="button button-reset-filter" name="button-reset">Сбросить</button>
+                    </fieldset>            
+                </form>
+            </section>
+        </div>
         <section class="catalog-views">
             <div >
                 <span class="hotel-amount">Найдено гостиниц: 38</span>
@@ -85,13 +87,13 @@
             </select>
             <ul class="sorting-view">
                 <li class="sorting-item"> 
-                    <a class="button-table" href="#"> Значок таблицы</a>
+                    <a class="button-table" href="#">Табличная сортировка</a>
                 </li>
                 <li class="sorting-item">
-                    <a class="button-slideshow" href="#">Значок слайдшоу</a> 
+                    <a class="button-slideshow" href="#">Сортировка слайдшоу</a> 
                 </li>
                 <li class="sorting-item"> 
-                    <a  class="button-list" href="#">Значок список</a>
+                    <a  class="button-list" href="#">Сортировка в виде списка</a>
                 </li>
             </ul>
             <ul class="hotel-list">
@@ -100,7 +102,7 @@
                         <img src="images/hotel-1.jpg" width="300" height="211" alt="Amara">
                     </p>
                     <div class="item-description">
-                        <span class="description-header"><a href="#">Amara Resort & Spa</a></span>
+                        <h4 class="description-header"><a href="#">Amara Resort & Spa</a></h4>
                         <div class="item-text">
                           <span>Гостиница</span>
                           <span>От 4000 ₽</span>
@@ -120,7 +122,7 @@
                         <img src="images/hotel-2.jpg" width="300" height="211" alt="Villas">
                     </p>
                     <div class="item-description">
-                        <span class="description-header"><a href="#">Villas at Poco Diablo</a></span>>
+                        <h4 class="description-header"><a href="#">Villas at Poco Diablo</a></h4>
                         <div class="item-text">
                           <span>Гостиница</span>
                           <span>От 5000 ₽</span>
@@ -140,7 +142,7 @@
                         <img src="images/hotel-3.jpg" width="300" height="211" alt="Desert"> 
                     </p>                 
                     <div class="item-description">
-                        <span class="description-header"><a href="#">Desert Quail Inn</a></span>
+                        <h4 class="description-header"><a href="#">Desert Quail Inn</a></h4>
                         <div class="item-text">
                           <span>Гостиница</span>
                           <span>От 2500 ₽</span>
@@ -160,7 +162,7 @@
                         <img src="images/hotel-4.jpg" width="300" height="211" alt="GreenTree" >
                     </p>
                     <div class="item-description">
-                        <h1 class="description-header"><a href="#">GreenTree Inn</a></h1>
+                        <h4 class="description-header"><a href="#">GreenTree Inn</a></h4>
                         <div class="item-text">
                           <span>Гостиница</span>
                           <span>От 1500 ₽</span>

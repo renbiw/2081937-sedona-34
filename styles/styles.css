@@ -14,7 +14,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -28,7 +36,7 @@ body {
   }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
     color: #000000;
   }
 
@@ -37,11 +45,34 @@ a {
     color: #000000;
     font-weight: 700;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 26px; 
 }
 
 .navigation-list {
-    list-style: none;
+    list-style-type: none;
+    width: 390px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+.navigation-link {
+    display: block;
+    padding: 24px 17px;
+}
+  
+.navigation-user {
+    max-width: 340px;
+    margin-left: auto;
+}
+
+.navigation-container {
+    min-width: 18px;
+    min-height: 18px;
+    display: flex;
+    width: 1060px;
+    margin: 0;
 }
 
 .button {
@@ -59,6 +90,15 @@ a {
     text-transform: uppercase;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .main-introduction {
     font-size: 30px;
     line-height: 36px;
@@ -73,6 +113,12 @@ a {
     text-align: center;
 }
 
+.advantages-list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
 .advantages-item:nth-child(3), .advantages-item:nth-child(5) {
     background-color: #83B3D31F;
 }
@@ -82,10 +128,14 @@ a {
 }
 
 .advantages-item {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
 }
 
 .promo-list {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     color: #000000;
     background-color: #F0F6FA;
@@ -132,7 +182,7 @@ a {
 
 .search-description {
     font-size: 22px;
-    line-height: 26px4
+    line-height: 26p;
 }
 
 .button-search {
@@ -149,22 +199,23 @@ a {
     list-style: none;
 }
 
-.footer-wth-background {
+.footer-wrapper {
     color: #ffffff;
+    background-size: cover;
     background-image: url("../images/blured-sedona-footer.jpg");
     background-repeat: no-repeat;
 }
 
-.footer-wth-background .subs-title {
+.footer-wrapper .subs-title {
     color:#ffffff;
 }
 
-.footer-wth-background .subs-content {
+.footer-wrapper.subs-content {
     color: #ffffff;
 }
 
 .footer-subs-email {
-    color:#000000;
+    color: #000000;
 }
 
 .logo-vk {
@@ -183,7 +234,7 @@ a {
  }
  
  .contacts-phone {
-     font-weight:400;
+     font-weight: 400;
      font-size: 40px;
      line-height: 40px;
  }
@@ -223,7 +274,7 @@ a {
 .searching-form {
     font-size: 20px;
     line-height: 26px;
-    color:#000000;
+    color: #000000;
 }
 
 .searching-title {
@@ -271,16 +322,15 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
-.field-with-backgr {
+.field-wrapper {
     color: #ffffff;
-    width: 1200px;
-    height: 403px;
+    background-size: cover;
     background-image: url("../images/blured-sedona-form.jpg");
     background-repeat: no-repeat;
 
 }
 
-.field-with-backgr h1 {
+.field-wrapper h1 {
     font-size: 60px;
     line-height: 78px;
 }
@@ -292,8 +342,18 @@ legend {
 }
 
 .catalog-filter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     color: #ffffff;
     line-height: 21px;
+}
+
+fieldset {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .button-apply-filter {
@@ -339,7 +399,22 @@ input {
 /**Карточки каталога**/
 .hotel-list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 66px;
 }
+
+.hotel-item {
+    margin-right: 18px;
+}
+
+.hotel-item:nth-child(3n) {
+    margin-right: 0;
+  }
 
 .description-header {
     font-size: 24px;
@@ -382,7 +457,15 @@ input {
 
 .pagination-list {
     list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
+
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
+  }
 
 .pagination-item:first-child a {
     color: #000000;
@@ -390,10 +473,10 @@ input {
 }
 
 .pagination-item a {
+    display: block;
     border-radius: 4px;
     width: 60px;
     height: 60px;
-    padding: 6px 8px;
     background-color: #82B3D3;
     color: #ffffff;
     text-transform: uppercase;

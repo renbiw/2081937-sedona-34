@@ -48,32 +48,34 @@ a {
     line-height: 26px; 
 }
 
+.navigation-container {
+    display: flex;
+    padding: 0 70px;
+}
+
 .navigation-list {
     list-style-type: none;
-    width: 390px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 520px;
     margin: 0;
-    padding-left: 70px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
   }
 
 .navigation-link {
+    padding: 20px 17px;
     display: block;
-    padding: 24px 17px;
 }
   
 .navigation-user {
-    max-width: 340px;
+    align-items: center;
+    max-width: 294px;
     margin-left: auto;
-}
+  }
 
-.navigation-container {
-    min-width: 18px;
-    min-height: 18px;
-    display: flex;
-    width: 1060px;
-    margin: 0;
-    padding-left: 70px;
+.navigation-user .navigation-link{   
+    min-width: 42px;
+    padding: 23px 12px;
 }
 
 .button {
@@ -83,8 +85,8 @@ a {
 }
 
 .button-offer {
-    background-color: #756157;
     padding: 9px 15px 8px;
+    background-color: #756157;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -139,6 +141,11 @@ a {
     list-style: none;
     color: #000000;
     background-color: #F0F6FA;
+    height: 384px;
+}
+
+.advantages-item:last-child {
+    height: 384px;
 }
 
 .advantages-title{
@@ -147,10 +154,13 @@ a {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .advantages-description {
-    text-align: center;
+    margin: 0;
 }
 
 .item-with-pic {
@@ -202,9 +212,23 @@ a {
     text-transform: uppercase;
 }
 
+.footer-social {
+    text-align: center;
+    padding: 40px 70px 30px;
+    width: 1060px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+   
+}
 
 .footer-social-list {
+    display: flex;
     list-style: none;
+    max-width: 190px;
+    margin-right: 41px;
+  
 }
 
 .footer-wrapper {
@@ -214,16 +238,16 @@ a {
     background-repeat: no-repeat;
 }
 
-.footer-wrapper .subs-title {
-    color:#ffffff;
+.footer-subs-email {
+    color: #000000;
 }
 
-.footer-wrapper.subs-content {
+.footer-wrapper .subs-title {
     color: #ffffff;
 }
 
-.footer-subs-email {
-    color: #000000;
+.footer-wrapper .subs-content {
+    color: #ffffff;
 }
 
 .logo-vk {

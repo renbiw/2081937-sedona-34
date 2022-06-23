@@ -42,10 +42,10 @@
             <h1>Гостиницы Седоны</h1> 
             <ul class="breadcrumbs">     
                 <li>
-                    <a class="home-outs" href="#">Главная</a>  
+                    <a class="home-outs breadcrumbs-item" href="#">Главная</a>  
                 </li>
                 <li>
-                    <a>Гостиницы</a>    
+                    <a class="breadcrumbs-item">Гостиницы</a>    
                 </li>      
             </ul>  
             <section class="filter-content">
@@ -181,33 +181,37 @@
                 </li>
             </ul>    
             <div class="pagination">
-                <ul class="pagination-list">
-                    <li class="pagination-item">
-                        <a href="#">1</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="#">2</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="#">3</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="#">4</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="#">...</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="#">10</a>
-                    </li>
-                </ul>
-                <span class="info-abt-amount-host">Гостиниц на странице</span>
-                <select class="select-amount" aria-label="Отбор">
-                    <option value="one-items">1</option>
-                    <option value="two-items">2</option>
-                    <option value="three-items">3</option>
-                    <option value="four-items">4</option>
-                </select>
+                <div class="pagination-container">
+                    <ul class="pagination-list">
+                        <li class="pagination-item">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">4</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">...</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">10</a>
+                        </li>
+                    </ul>
+                    <div class="select-amount-container">
+                        <span class="info-abt-amount-host">Гостиниц на странице</span>
+                        <select class="select-amount" aria-label="Отбор">
+                            <option value="one-items">1</option>
+                            <option value="two-items">2</option>
+                            <option value="three-items">3</option>
+                            <option value="four-items">4</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

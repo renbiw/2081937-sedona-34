@@ -132,6 +132,7 @@ a {
 }
 
 .advantages-item {
+    text-align: center;
     flex: 1 1 30%;
    
 }
@@ -155,12 +156,19 @@ a {
     line-height: 28px;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 92px;
     margin-bottom: 30px;
 }
 
+.advantages-with-pic-description {
+    flex-wrap: wrap;
+}
+
 .advantages-description {
+    text-align: center;
     margin: 0;
+    margin-left: 85px;
+    margin-right: 85px;
 }
 
 .item-with-pic {
@@ -188,6 +196,8 @@ a {
 }
 
 .search-hostel {
+    padding-top: 91px;
+    padding-bottom: 93px;
     text-align: center;
 }
 
@@ -199,6 +209,11 @@ a {
 }
 
 .search-description {
+    padding-left: 304px;
+    padding-right: 304px;
+    padding-top: 29px;
+    padding-bottom: 56px;
+    text-align: center;
     font-size: 22px;
     line-height: 26p;
 }
@@ -210,6 +225,10 @@ a {
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.page-footer {
+    margin-top: 25px
 }
 
 .footer-social {
@@ -239,6 +258,9 @@ a {
 }
 
 .footer-subs-email {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
     color: #000000;
 }
 
@@ -280,8 +302,20 @@ a {
 }
 
 .subs-content {
+    text-align: center;
     font-size: 22px;
     line-height: 26px;
+    padding-left: 363px;
+    padding-right: 361px;
+}
+
+.subs-form {
+    display: flex;
+    margin-left: 200px;
+}
+
+.subs-form-name {
+    margin:0;
 }
 
 .subs-field {
@@ -304,9 +338,40 @@ a {
 
  /**Форма поиск гостиницы**/
 .searching-form {
+    width: 715px;
+    height: 561px;
+    padding: 62px 70px 70px 70px;
     font-size: 20px;
     line-height: 26px;
     color: #000000;
+}
+
+.searching-form-header {
+    display: flex;
+}
+
+.searching-form-date-in {
+    margin-top: 54px;
+    margin-bottom: 40px;
+}
+
+.button-close {
+    width: 53px;
+    height: 53px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #F2F2F2;
+    border-radius: 100%;
+    margin-left: 111px;
+}
+
+.label-for-date {
+    width: 420px;
+    height: 50px;
+}
+
+ p .form-label {
+    margin-right: 20px;
 }
 
 .searching-title {
@@ -319,6 +384,19 @@ a {
     font-weight: 700;
 }
 
+.input-for-input {
+    width: 133px;
+    height: 50px;
+}
+
+.amount-adults label, .amount-of-children label {
+    margin-right: 64px;
+}
+
+.field-amount-people {
+    display: flex;
+}
+
 .button-in-form {
     font-weight: 700;
     border: 0;
@@ -329,6 +407,8 @@ a {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+    min-width: 100%;
+    margin-top: 40px;
 }
 
 .searching-form input {
@@ -399,6 +479,14 @@ legend {
     margin-bottom:30px;
 }
 
+.control-input {
+    margin-right:19px;
+}
+
+.check-input {
+    margin-right: 19px;
+}
+
 .catalog-filter {
     display: flex;
     width: 100%;
@@ -459,6 +547,7 @@ input {
     display: flex;
     justify-content: space-between;
     padding-left: 72px;
+    padding-top: 62px;
 }
 
 .hotel-amount {
@@ -484,32 +573,77 @@ input {
     margin: 0;
     padding: 0;
     width: 100%;
-    margin-bottom: 66px;
+    margin-top: 60px;
 }
 
 .hotel-item {
     margin-right: 18px;
 }
 
+.hotel-item:nth-child(1) {
+    margin-left: 73px;
+}
+
+.hotel-item:nth-child(4) {
+    margin-left: 73px;
+}
+
+.hotel-item img {
+    padding: 20px 20px 0 20px;
+    margin: 0;
+}
+
 .hotel-item:nth-child(3n) {
     margin-right: 0;
   }
 
+.item-description {
+    padding: 16px 20px 20px 20px;
+}
+
+.item-text {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.item-text span {
+    flex-grow: 1;
+    max-width: 140px;
+    margin-right:5px
+}
+
 .description-header {
     font-size: 24px;
     line-height: 28px;
+    padding: 0 0 16px 0;
+    margin: 0;
+}
+
+.buttons-info-about-hostel a {
+    margin-right: 20px;
 }
 
 .rating {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;  
+    display: flex;
+    margin: 24px 20px 20px 0;
+    max-height: 38px;
+    flex-wrap: nowrap;
+}
+
+.rating h6 {
+    flex-grow: 6;
+    margin: 0;
 }
 
 .rating span {
     background-color: #F2F2F2;
     padding: 9px 23px 22px 8px;
     border-radius: 4px;
+    flex-grow: 1;
+    margin-left: 10px;
 }
 
 .button-more {
@@ -537,6 +671,7 @@ input {
 .pagination {
     width: 1057px;
     margin: 0 auto;
+    margin-left: 73px;
 }
 
 .pagination-container {
@@ -574,5 +709,9 @@ input {
     line-height: 36px;
 }
 
-   
+.select-amount {
+    margin-left: 51px;
+    width: 160px;
+    height: 40px;
+}
 

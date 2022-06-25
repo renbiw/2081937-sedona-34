@@ -45,8 +45,10 @@
           <ol class="advantages-list">
             <li class="advantages-item">
               <div class="item-with-pic">
-                <h3 class="advantages-title white-title">Настоящий городок</h3>
-                <p class="advantages-description">Седона — не аттракцион для туристов, там течет своя жизнь</p>    
+                <div class="advantages-with-pic-description">
+                  <h3 class="advantages-title white-title">Настоящий городок</h3>
+                  <p class="advantages-description">Седона — не аттракцион для туристов, там течет своя жизнь</p>    
+                </div>
                 <img class ="sedona-image" src="images/sedona-2.jpg" alt="Седона город" width="800" height="384">
               </div>
               <ul class="promo-list">
@@ -68,8 +70,10 @@
               </ul>
             </li>
             <li class="advantages-item item-with-pic">
-              <h3 class="advantages-title white-title">Там есть мост дьявола</h3>
-              <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <div class="advantages-with-pic-description">
+                <h3 class="advantages-title white-title">Там есть мост дьявола</h3>
+                <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
               <img class ="devils-bridge" src="images/sedona-3.jpg" alt="Мост дьявола" width="800" height="384">
             </li>  
             <li class="advantages-item">
@@ -125,27 +129,31 @@
     </footer>
    <div>
     <form class="searching-form" action="https://echo.htmlacademy.ru/" method="post">
-      <h2 class="searching-title">Поиск гостиницы в Седоне</h2>
-      <span class='button-close'></span> 
+      <div class="searching-form-header">
+        <h2 class="searching-title">Поиск гостиницы в Седоне</h2>
+        <span class='button-close'>x</span> 
+      </div>
       <p class="searching-form-date-in">
-        <label class="form-label" for="searching-date-in">Дата Заезда</label>
-        <input type="text" id="searching-date-in" name="searching-date-in" value="27 апреля 2020">
+        <label class="form-label" for="searching-date-in">Дата Заезда:</label>
+        <input class = "label-for-date" type="text" id="searching-date-in" name="searching-date-in" value="27 апреля 2020">
       </p>
       <p class="searching-form-date-out">
-        <label class="form-label" for="searching-date-out">Дата Выезда</label>
-        <input type="text" id="searching-date-out" name="searching-date-out" value="1 сентября 2021">
+        <label class="form-label" for="searching-date-out">Дата Выезда:</label>
+        <input class = "label-for-date" type="text" id="searching-date-out" name="searching-date-out" value="1 сентября 2021">
       </p>
-      <div class="amount-adults"> 
-          <label class="form-label" for="amount-of-adults">Взрослые:</label>       
+      <div class="field-amount-people">
+        <div class="amount-adults"> 
+            <label class="form-label" for="amount-of-adults">Взрослые:</label>       
+            <button type="button" class="amount_minus">-</button>
+            <input class="input-for-input" type="text" id="amount-of-adults" name="amount-of-adults" value="2">
+            <button type="button" class="amount_plus">+</button>
+        </div>
+        <div class="amount-of-children"> 
+          <label class="form-label" for="amount-of-children">Дети:</label>       
           <button type="button" class="amount_minus">-</button>
-          <input type="text" id="amount-of-adults" name="amount-of-adults" value="2">
+          <input class="input-for-input" type="text" id="amount-of-children" name="amount-of-children" value="1">
           <button type="button" class="amount_plus">+</button>
       </div>
-      <div class="amount-of-children"> 
-        <label class="form-label" for="amount-of-children">Дети:</label>       
-        <button type="button" class="amount_minus">-</button>
-        <input type="text" id="amount-of-children" name="amount-of-children" value="1">
-        <button type="button" class="amount_plus">+</button>
     </div>
       <button class="button button-in-form" type="submit">Найти</button>
     </form>      

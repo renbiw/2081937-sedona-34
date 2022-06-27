@@ -31,9 +31,25 @@ body {
     background-color: #ffffff;
 }
 
+.container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
+
+img {
+    display: block
+}
 
 a {
     text-decoration: none;
@@ -41,6 +57,19 @@ a {
   }
 
 /**Главная страница**/
+
+.page-header {
+    position: relative;
+}
+
+.logo {
+    margin-bottom: -4px;
+}
+
+.active-navigation-link {
+    border-bottom: 2px solid #756257;
+}
+
 .navigation {
     color: #000000;
     font-weight: 700;
@@ -78,19 +107,42 @@ a {
     padding: 23px 12px;
 }
 
+.item-search {
+    background-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+}
+
+.item-fav {
+    background-image: url("../images/favorite.svg");
+    background-repeat: no-repeat;
+}
+
 .button {
+    background-color: #756157;
     border-radius: 4px;
     color: #ffffff;
     font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    border: none;
+    text-transform: uppercase;
 }
 
 .button-offer {
     padding: 9px 15px 8px;
-    background-color: #756157;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
+}
+
+.container-with-sedona-pictures {
+    background-color: #82B3D3;
+}
+
+.main-welcome-pic {
+    position: absolute;
+    top: 120px;
+    right: 506px;
+    bottom: 389px;
+    left: 476px;
 }
 
 .main-container {
@@ -110,7 +162,7 @@ a {
     color: #000000;
 }
 
-.main-introduction + p {
+.introduction-part-two{
     font-size: 22px;
     line-height: 26px;
     text-align: center;
@@ -192,6 +244,7 @@ a {
 
 .gift-logo {
     background-image: url("../images/gift.svg");
+    background-repeat: no-repeat;
 }
 
 .search-hostel {
@@ -226,10 +279,6 @@ a {
     text-transform: uppercase;
 }
 
-.page-footer {
-    margin-top: 25px
-}
-
 .footer-social {
     text-align: center;
     padding: 40px 70px 30px;
@@ -257,6 +306,7 @@ a {
 }
 
 .footer-subs-email {
+    margin-top: 25px;
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
@@ -397,13 +447,12 @@ a {
 }
 
 .button-in-form {
-    font-weight: 700;
     border: 0;
     color: #ffffff;
     padding: 12px 26px;
     background-color: #83B3D3;
-    font-size: 20px;
     line-height: 36px;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     min-width: 100%;
@@ -519,19 +568,19 @@ fieldset {
     text-transform: uppercase;
     background-color: #82B3D3;
     border: 0;
-    line-height: 20px;
-    font-weight: 700;
     margin-bottom: 20px;
 }
 
 .button-reset-filter {
+    color: #ffffff;
+    text-decoration: none;
     font-weight: 400;
     padding: 0;
     border: none;
     background: none;
+    text-align: center;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
 }
 
 button {
@@ -555,6 +604,21 @@ input {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.button-table {
+    background-image: url("../images/icon-table.svg");
+    background-repeat: no-repeat;
+}
+
+.button-slideshow {
+    background-image: url("../images/icon-slideshow.svg");
+    background-repeat: no-repeat;
+}
+
+.button-list {
+    background-image: url("../images/icon-list.svg");
+    background-repeat: no-repeat;
 }
 
 .sorting-view {
@@ -637,14 +701,17 @@ input {
 }
 
 .button-more {
+    font-weight: 700;
     background-color: #756157;
 }
 
 .button-in-fav {
+    font-weight: 700;
     background-color: #7DB54F; 
 }
 
 .button-add-in-fav {
+    font-weight: 700;
     background-color: #82B3D3;
 }
 

@@ -59,6 +59,7 @@ a {
 /**Главная страница**/
 
 .page-header {
+    z-index: 10;
     position: relative;
 }
 
@@ -168,10 +169,16 @@ a {
 }
 
 .advantages-list {
+    list-style: none;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
    
+}
+
+.item-with-pic {
+    padding: 0;
+    margin: 0;
 }
 
 .advantages-item:nth-child(3), .advantages-item:nth-child(5) {
@@ -183,10 +190,10 @@ a {
 }
 
 .advantages-item {
+    padding-top: 103px;
+    padding-bottom: 102px;
     text-align: center;
     flex: 1 1 30%;
-    padding-bottom: 92px;
-   
 }
 
 .promo-list {
@@ -194,10 +201,6 @@ a {
     list-style: none;
     color: #000000;
     background-color: #F0F6FA;
-}
-
-.advantages-item:last-child {
-
 }
 
 .advantages-title{
@@ -233,23 +236,43 @@ a {
     color: #ffffff;
 }
 
-.promo-item .hostel-logo {
+.promo-item {
+    flex: 1 1 30%;
+    padding-top: 103px;
+    padding-bottom: 102px;
+}
+
+.hostel-logo {
     background-image: url("../images/hostel.svg") ;
+    background-repeat: no-repeat;
+    display: block;
+    width: 75px;
+    height: 70px;
 }
 
 .food-logo {
     background-image: url("../images/food.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 76px;
+    height: 72px;
+    text-align: center;
 }
 
 .gift-logo {
     background-image: url("../images/gift.svg");
     background-repeat: no-repeat;
+    display: block;
+    width: 65px;
+    height: 76px;
+    position: center;
 }
 
 .search-hostel {
     padding-top: 91px;
     padding-bottom: 93px;
     text-align: center;
+    position: center;
 }
 
 .search-title {
@@ -323,16 +346,25 @@ a {
 .logo-vk {
     background-image: url("../images/vk-logo.svg");
     background-repeat: no-repeat;
+    display: block;
+    width: 25px;
+    height: 14px;
  }
  
  .logo-tg {
      background-image: url("../images/tg-logo.svg");
      background-repeat: no-repeat;
+     display: block;
+     width: 18px;
+     height: 16px;
  }
  
  .logo-yt {
      background-image: url("../images/youtube-logo.svg");
      background-repeat: no-repeat;
+     display: block;
+     width: 23px;
+     height: 18px;
  }
  
  .contacts-phone {
@@ -605,19 +637,35 @@ input {
     text-transform: uppercase;
 }
 
+.sortong-item {
+    border: 1px solid #000000;
+}
+
 .button-table {
     background-image: url("../images/icon-table.svg");
     background-repeat: no-repeat;
+    width: 16px;
+    height: 14px;
+    position: center;
+    display: block;
 }
 
 .button-slideshow {
     background-image: url("../images/icon-slideshow.svg");
     background-repeat: no-repeat;
+    width: 16px;
+    height: 14px;
+    position: center;
+    display: block;
 }
 
 .button-list {
     background-image: url("../images/icon-list.svg");
     background-repeat: no-repeat;
+    width: 16px;
+    height: 14px;
+    position: center;
+    display: block;
 }
 
 .sorting-view {

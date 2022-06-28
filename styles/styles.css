@@ -135,14 +135,13 @@ a {
 
 .container-with-sedona-pictures {
     background-color: #82B3D3;
+    position: relative;
 }
 
 .main-welcome-pic {
     position: absolute;
-    top: 120px;
-    right: 506px;
-    bottom: 389px;
-    left: 476px;
+    top: 51px;
+    left: 371px;
 }
 
 .main-container {

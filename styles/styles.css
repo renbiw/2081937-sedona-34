@@ -20,7 +20,6 @@
     box-sizing: border-box;
 }
 
-
 html {
     height: 100%;
 }
@@ -39,6 +38,7 @@ body {
 }
 
 .container {
+    width: 1200px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -117,12 +117,16 @@ a {
 
 .item-search {
     background-image: url("../images/search.svg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+    min-height: 19px;
+    min-width: 19px;
 }
 
 .item-fav {
     background-image: url("../images/favorite.svg");
     background-repeat: no-repeat;
+    min-height: 19px;
+    min-width: 17px;
 }
 
 .button {
@@ -261,24 +265,24 @@ a {
 .hostel-logo {
     background-image: url("../images/hostel.svg") ;
     background-repeat: no-repeat;
-    width: 75px;
-    height: 70px;
+    min-width: 75px;
+    min-height: 70px;
     display: inline-block;
 }
 
 .food-logo {
     background-image: url("../images/food.svg");
     background-repeat: no-repeat;
-    width: 76px;
-    height: 72px;
+    min-width: 76px;
+    min-height: 72px;
     display: inline-block;
 }
 
 .gift-logo {
     background-image: url("../images/gift.svg");
     background-repeat: no-repeat;
-    width: 65px;
-    height: 76px;
+    min-width: 65px;
+    min-height: 76px;
     display: inline-block;
 }
 
@@ -303,7 +307,7 @@ a {
     padding-bottom: 56px;
     text-align: center;
     font-size: 22px;
-    line-height: 26p;
+    line-height: 26px;
 }
 
 .button-search {
@@ -364,30 +368,30 @@ a {
     background-image: url("../images/vk-logo.svg");
     background-repeat: no-repeat;
     display: block;
-    width: 25px;
-    height: 14px;
+    min-width: 25px;
+    min-height: 14px;
  }
  
  .logo-tg {
-     background-image: url("../images/tg-logo.svg");
-     background-repeat: no-repeat;
-     display: block;
-     width: 18px;
-     height: 16px;
+    background-image: url("../images/tg-logo.svg");
+    background-repeat: no-repeat;
+    display: block;
+    min-width: 18px;
+    min-height: 16px;
  }
  
  .logo-yt {
-     background-image: url("../images/youtube-logo.svg");
-     background-repeat: no-repeat;
-     display: block;
-     width: 23px;
-     height: 18px;
+    background-image: url("../images/youtube-logo.svg");
+    background-repeat: no-repeat;
+    display: block;
+    min-width: 23px;
+    min-height: 18px;
  }
  
  .contacts-phone {
-     font-weight: 400;
-     font-size: 40px;
-     line-height: 40px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
  }
 
  /**Форма подписки на рассылку**/
@@ -436,7 +440,6 @@ a {
  /**Форма поиск гостиницы**/
 .searching-form {
     width: 715px;
-    height: 561px;
     padding: 62px 70px 70px 70px;
     font-size: 20px;
     line-height: 26px;
@@ -721,6 +724,10 @@ input {
 .hotel-item:nth-child(3n) {
     margin-right: 0;
   }
+
+.hotel-item:nth-child(3n-2) {
+    margin-left: 73px;
+}
 
 .item-description {
     padding: 16px 20px 20px 20px;

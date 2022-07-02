@@ -318,8 +318,7 @@ a {
 }
 
 .search-hostel {
-    padding-top: 91px;
-    padding-bottom: 93px;
+    padding: 91px 313px 93px;
     text-align: center;
 }
 
@@ -331,8 +330,6 @@ a {
 }
 
 .search-description {
-    padding-left: 304px;
-    padding-right: 304px;
     padding-top: 29px;
     padding-bottom: 56px;
     text-align: center;
@@ -341,6 +338,7 @@ a {
 }
 
 .button-search {
+    display: block;
     color: #ffffff;
     background-color: #756157;
     padding: 12px 15px;
@@ -366,6 +364,10 @@ a {
     max-width: 448px;
     margin-right: 41px;
   
+}
+
+.footer-social-item {
+    padding-right: 26px;
 }
 
 .footer-wrapper {
@@ -449,8 +451,8 @@ a {
 }
 
 .subs-field {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius:  10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: #F2F2F2;
     padding: 20px 21px 19px 22px;
     width: 600px;

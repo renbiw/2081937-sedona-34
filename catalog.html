@@ -101,21 +101,21 @@
                             <option value="expensive">Сначала дорогие</option>
                         </select>
                         <ul class="sorting-view">
-                            <li class="sorting-item"> 
-                                <a class="button-table" href="#"><span class="visually-hidden">Табличная сортировка</span></a>
+                            <li class="sorting-item sorting-item-active"> 
+                                <a class="button-table " href="#"><span class="visually-hidden">Табличная сортировка</span></a>
                             </li>
-                            <li class="sorting-item">
-                                <a class="button-slideshow" href="#"><span class="visually-hidden">Сортировка слайдшоу</span></a> 
+                            <li class="sorting-item sorting-item-unactive">
+                                <a class="button-slideshow " href="#"><span class="visually-hidden">Сортировка слайдшоу</span></a> 
                             </li>
-                            <li class="sorting-item"> 
-                                <a  class="button-list" href="#"><span class="visually-hidden">Сортировка в виде списка</span></a>
+                            <li class="sorting-item sorting-item-unactive"> 
+                                <a  class="button-list " href="#"><span class="visually-hidden">Сортировка в виде списка</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <ul class="hotel-list">
                     <li class="hotel-item">
-                        <img src="images/hotel-1.jpg" width="300" height="211" alt="Amara">
+                        <img class="hostel-picture" src="images/hotel-1.jpg" width="300" height="211" alt="Amara">
                         <div class="item-description">
                             <h4 class="description-header"><a href="#">Amara Resort & Spa</a></h4>
                             <div class="item-text">
@@ -133,7 +133,7 @@
                         </div>          
                     </li>
                     <li class="hotel-item">
-                        <img src="images/hotel-2.jpg" width="300" height="211" alt="Villas">
+                        <img class="hostel-picture" src="images/hotel-2.jpg" width="300" height="211" alt="Villas">
                         <div class="item-description">
                             <h4 class="description-header"><a href="#">Villas at Poco Diablo</a></h4>
                             <div class="item-text">
@@ -151,7 +151,7 @@
                         </div>          
                     </li>
                     <li class="hotel-item">
-                        <img src="images/hotel-3.jpg" width="300" height="211" alt="Desert">                 
+                        <img class="hostel-picture" src="images/hotel-3.jpg" width="300" height="211" alt="Desert">                 
                         <div class="item-description">
                             <h4 class="description-header"><a href="#">Desert Quail Inn</a></h4>
                             <div class="item-text">
@@ -169,7 +169,7 @@
                         </div>          
                     </li>
                     <li class="hotel-item">
-                        <img src="images/hotel-4.jpg" width="300" height="211" alt="GreenTree" >
+                        <img class="hostel-picture" src="images/hotel-4.jpg" width="300" height="211" alt="GreenTree" >
                         <div class="item-description">
                             <h4 class="description-header"><a href="#">GreenTree Inn</a></h4>
                             <div class="item-text">
@@ -230,8 +230,10 @@
         </main>
         <footer class="page-footer">
             <section class="footer-subs-email">   
-            <span class="subs-title">Подпишитесь на рассылку</span>
-            <p class="subs-content">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <div class ="container-for-subs-title">
+                <span class="subs-title">Подпишитесь на рассылку</span>
+                <p class="subs-content">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            </div>
             <form class="subs-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="subs-form-name">
                 <input class="subs-field" type="text" id="subs-email-name" name="subs-email-name" placeholder="Ваш e-mail">

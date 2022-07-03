@@ -68,6 +68,17 @@ a {
     display: none;
 }
 
+.grid-container-searching-form {
+    display: grid;
+    grid-template-columns: 155px 155px 155px 155px ;
+    grid-template-rows: 50px 50px 50px;
+}
+
+.searching-form-date-in {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
 
 /**Главная страница**/
 
@@ -104,15 +115,16 @@ a {
 
 .navigation-list {
     list-style-type: none;
-    width: 520px;
+    width: 311px;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap; 
+    justify-content: space-between;
   }
 
 .navigation-link {
-    padding: 20px 17px;
+    padding: 20px 0;
     display: block;
 }
   
@@ -233,6 +245,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    margin: 0;
    
 }
 
@@ -288,10 +301,8 @@ a {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin: 30px 0;
+    padding: 0 29px;
 }
 
 .advantages-description {
@@ -320,10 +331,7 @@ a {
 
 .promo-item {
     flex: 1 1 30%;
-    padding-top: 103px;
-    padding-bottom: 102px;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding: 80px 85px;
 }
 
 .hostel-logo {
@@ -351,8 +359,12 @@ a {
 }
 
 .search-hostel {
-    padding: 91px 313px 93px;
+    padding: 91px 304px 68px;
     text-align: center;
+}
+
+.container-for-subscribe-button {
+    padding: 0 9px;
 }
 
 .search-title {
@@ -363,6 +375,7 @@ a {
 }
 
 .search-description {
+    margin: 0;
     padding-top: 29px;
     padding-bottom: 56px;
     text-align: center;
@@ -396,6 +409,7 @@ a {
     display: flex;
     list-style: none;
     max-width: 448px;
+    padding-left: 12px;
 }
 
 .footer-social-item:not(:last-child) {
@@ -504,9 +518,11 @@ a {
     font-size: 20px;
     line-height: 36px;
     border: 0;
-    padding: 12px 15px ;
+    padding: 12px 30px ;
     border-top-left-radius: 0 ;
     border-bottom-left-radius: 0 ;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
 }
 
  /**Форма поиск гостиницы**/
@@ -589,6 +605,15 @@ a {
 }
 
 /**Каталог**/
+
+.home-outs {
+    display: block;
+    background-image: url("../images/home.svg");
+    width: 12px; 
+    height: 12px;
+    background-repeat: no-repeat;
+}
+
 .breadcrumbs {
     font-size: 16px;
     list-style: none;
@@ -630,8 +655,36 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .field-input-value {
+    margin: 0;
+    position: relative;
+    color: #FFFFFF;
+    background-color: transparent;
     width:144px;
     height:48px;
+    border: 2px solid #FFFFFF;
+    padding: 14px 0 13px 19px;
+}
+
+.cost-choosing{
+    position: relative;
+    right: 14px;
+    top: 12px;   
+    opacity: 30%;
+}
+
+.cost-choosing-to {
+    right: 30px;
+}
+
+.field-input-value-from {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-right: -17px;
+}
+
+.field-input-value-to {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .container-fot-input-item {
@@ -668,8 +721,9 @@ legend {
 
 .sorting-container {
     display: flex;
-    height: 58px;
+    height: 48px;
     padding-right: 71px;
+    width: 600px;
 }
 
 fieldset {
@@ -682,7 +736,7 @@ fieldset {
 
 .filter-cost-title {
     flex-direction: row;
-    margin-right: 175px;
+
 }
 
 .button-container {
@@ -692,7 +746,7 @@ fieldset {
 }
 
 .button-apply-filter {
-    padding: 14px 15px;
+    padding: 14px 30px;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #82B3D3;
@@ -718,6 +772,11 @@ button {
 
 input {
     font: inherit;
+}
+
+.select-control {
+    border: 2px solid #E5E5E5;
+    width: 100%
 }
 
 .sorting-hotel-container {
@@ -794,7 +853,7 @@ input {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
-    padding: 0;
+    padding: 0 71px 46px 73px;
     margin-top: 60px;
 }
 
@@ -802,25 +861,16 @@ input {
     display: block;
 }
 
-.hotel-item {
+.hotel-item:not(:nth-child(3n)){
     margin-right: 18px;
 }
 
 .hotel-item img {
-    padding: 20px 20px 0 20px;
     margin: 0;
 }
 
-.hotel-item:nth-child(3n) {
-    margin-right: 0;
-  }
-
-.hotel-item:nth-child(3n-2) {
-    margin-left: 73px;
-}
-
 .item-description {
-    padding: 16px 20px 20px 20px;
+    padding: 16px 0 20px 0;
 }
 
 .item-text {
@@ -829,9 +879,16 @@ input {
 }
 
 .item-text span {
-    flex-grow: 1;
-    max-width: 140px;
-    margin-right:5px
+    flex: 0 0  55%;
+}
+
+.item-text-hostel {
+    flex: 0 0  45%;
+   
+}
+
+.tem-text-cost {
+    margin-right: 0;
 }
 
 .description-header {
@@ -841,23 +898,40 @@ input {
     margin: 0;
 }
 
-.buttons-info-about-hostel a {
-    margin-right: 20px;
-}
-
 .rating {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;  
     display: flex;
-    margin: 24px 20px 20px 0;
+    margin: 24px 0 20px 0;
     max-height: 38px;
     flex-wrap: nowrap;
 }
 
 .rating-stars {
-    flex-grow: 6;
     margin: 0;
+    display: block;
+    flex: 1 1 50%;
+    padding-right: 10px;
+}
+
+.rating-text {
+    flex-grow: 1;
+}
+
+.rating-two-stars {
+    background-image: url("../images/two-stars.svg");
+    background-repeat: no-repeat;
+}
+
+.rating-three-stars {
+    background-image: url("../images/three-stars.svg");
+    background-repeat: no-repeat;
+}
+
+.rating-four-stars {
+    background-image: url("../images/four-stars.svg");
+    background-repeat: no-repeat;
 }
 
 .rating span {
@@ -871,16 +945,20 @@ input {
 .button-more {
     font-weight: 700;
     background-color: #756157;
+    margin-right: 20px;
+    padding: 9px 28px 8px;
 }
 
 .button-in-fav {
     font-weight: 700;
     background-color: #7DB54F; 
+    padding: 9px 15px 8px;
 }
 
 .button-add-in-fav {
     font-weight: 700;
     background-color: #82B3D3;
+    padding: 9px 15px 8px; 
 }
 
 .but-dec { 
@@ -889,7 +967,6 @@ input {
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
-    padding: 9px 15px 8px;
 }
 
 
@@ -897,6 +974,7 @@ input {
     width: 1057px;
     margin: 0 auto;
     margin-left: 73px;
+    padding-top: 30px; 
 }
 
 .pagination-container {
@@ -937,5 +1015,7 @@ input {
     margin-left: 51px;
     width: 160px;
     height: 40px;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
 }
 

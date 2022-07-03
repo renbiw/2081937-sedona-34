@@ -41,7 +41,7 @@
                 <h1>Гостиницы Седоны</h1> 
                 <ul class="breadcrumbs">     
                     <li>
-                        <a class="home-outs breadcrumbs-item" href="#">Главная</a>  
+                        <a class="home-outs breadcrumbs-item" href="#"><span class="visually-hidden">Главная</span></a>  
                     </li>
                     <li>
                         <a class="breadcrumbs-item">Гостиницы</a>    
@@ -81,8 +81,10 @@
                         </fieldset>
                         <fieldset class="filter-cost-title">
                             <legend>Стоимость, ₽:</legend>
-                                <label class="cost-choosing-from">От <input class="field-input-value" type="number" name="from" value="0" id="from-value"></label>
-                                <label class="cost-choosing-to">До <input class="field-input-value" type="number" name="to" value="9000" id="to-value"></label>
+                                <input class="field-input-value field-input-value-from" type="number" name="from" value="0" id="from-value">
+                                <label for = "from-value" class="cost-choosing cost-choosing-from">от</label>
+                                <input class="field-input-value field-input-value-to" type="number" name="to" value="9000" id="to-value">
+                                <label for = "to-value" class="cost-choosing cost-choosing-to">до</label>
                         </fieldset>    
                         <div class="button-container">
                             <button type="submit" class="button button-apply-filter" name="button-apply">Применить</button>
@@ -119,16 +121,16 @@
                         <div class="item-description">
                             <h4 class="description-header"><a href="#">Amara Resort & Spa</a></h4>
                             <div class="item-text">
-                            <span>Гостиница</span>
-                            <span>От 4000 ₽</span>
+                            <span class="item-text-hostel">Гостиница</span>
+                            <span class="item-text-cost">От 4000 ₽</span>
                             </div>
                             <div class = "buttons-info-about-hostel">
                             <a class="but-dec button-more" href="#">Подробнее</a>
                             <a class="but-dec button-add-in-fav" href="#">В избранное</a>
                             </div>
                             <div class="rating">
-                                <h6 class="rating-stars">4 звезды</h6>  
-                                <span>Рейтинг: 8,5</span>   
+                                <h6 class="rating-stars rating-four-stars"><span class="visually-hidden">4 звезды</span></h6>  
+                                <span class = "rating-text">Рейтинг: 8,5</span>   
                             </div>
                         </div>          
                     </li>
@@ -145,8 +147,8 @@
                             <a class = "but-dec button-in-fav" href="#">В избранном</a>
                             </div>
                             <div class="rating">    
-                                <h6 class="rating-stars">4 звезды</h6>   
-                                <span>Рейтинг: 9,2</span>     
+                                <h6 class="rating-stars rating-four-stars"><span class="visually-hidden">4 звезды</span></h6>   
+                                <span class = "rating-text">Рейтинг: 9,2</span>     
                             </div>
                         </div>          
                     </li>
@@ -163,8 +165,8 @@
                             <a class="but-dec button-add-in-fav" href="#">В избранное</a>
                             </div>
                             <div class="rating">
-                                <h6 class="rating-stars">3 звезды</h6>
-                                <span>Рейтинг: 6,9</span>   
+                                <h6 class="rating-stars rating-three-stars"><span class="visually-hidden">3 звезды</span></h6>
+                                <span class = "rating-text">Рейтинг: 6,9</span>   
                             </div>
                         </div>          
                     </li>
@@ -181,8 +183,8 @@
                             <a class="but-dec button-add-in-fav" href="#">В избранное</a>
                             </div>
                             <div class="rating">
-                                <h6 class="rating-stars">2 звезды</h6>  
-                                <span>Рейтинг: 5,0</span>   
+                                <h6 class="rating-stars rating-two-stars"><span class="visually-hidden">2 звезды</span></h6>  
+                                <span class = "rating-text">Рейтинг: 5,0</span>   
                             </div>
                         </div>          
                     </li>

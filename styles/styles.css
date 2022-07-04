@@ -65,7 +65,7 @@ a {
 /**Форма бронирования**/
 
 .modal {
-    display: none;
+   /* display: none;*/
 }
 
 .grid-container-searching-form {
@@ -74,9 +74,49 @@ a {
     grid-template-rows: 50px 50px 50px;
 }
 
-.searching-form-date-in {
+.searching-form-date-in-label {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.searching-form-date-in-input {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    
+}
+
+.searching-form-date-out-label {
     grid-column: 1/2;
     grid-row: 2/3;
+}
+
+.searching-form-date-out-input {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+}
+
+.amount-adults {
+    grid-column: 1/2;
+    grid-row: 3/-1;
+}
+
+.input-amount-adults {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2/3;
+    grid-row: 3/-1;
+}
+
+.amount-of-children {
+    grid-column: 3/-2;
+    grid-row: 3/-1;
+}
+
+.input-amount-children {
+    display: flex;
+    flex-direction: row;
+    grid-column: -2/-1;
+    grid-row: 3/-1;
 }
 
 
@@ -136,21 +176,13 @@ a {
     list-style-type: none;
     align-items: center;
     margin-left: auto;
+    column-gap: 23px;
   }
 
 .navigation-user-link {
     padding: 0 12px;
     display: block;
 }
-
-.navigation-user-item {
-    padding-right: 23px;
-}
-
-.navigation-user-item:last-child {
-    padding-right: 32px;
-}
-
 
 .item-search {
     background-image: url("../images/search.svg");
@@ -163,7 +195,7 @@ a {
     background-image: url("../images/favorite.svg");
     background-repeat: no-repeat;
     min-height: 19px;
-    min-width: 17px;
+    min-width: 19px;
 }
 
 .button {
@@ -178,15 +210,13 @@ a {
     text-transform: uppercase;
 }
 
-.container-for-button-offer {
-    padding: 9px 30px 8px;
+.button-offer {
+    margin: 14px 0 14px 32px;
+    min-width: 160px;
     background-color: #756157;
     border-radius: 4px;
-}
-
-.button-offer {
-    margin-bottom: auto;
-    margin-top: auto; 
+    display: inline-block;
+    text-align: center;
 }
 
 .container-with-sedona-pictures {

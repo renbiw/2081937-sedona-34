@@ -33,7 +33,7 @@
               <a class="navigation-user-link item-fav" href="#"><span class = "visually-hidden">Избранное</span></a>
             </li>
           </ul>  
-          <a class="button button-offer" href="#"><span class = "container-for-button-offer">Хочу сюда!</span></a>
+          <a class="button button-offer" href="#">Хочу сюда!</a>
         </div>
       </header>
       <main class="main-index main-container">
@@ -148,30 +148,34 @@
             <button class="button-close" type="button" >x</button> 
           </div>
           <div class="grid-container-searching-form">
-            <p class="searching-form-date-in">
+            <div class="searching-form-date-in-label">
               <label class="form-label label-date-in" for="searching-date-in">Дата Заезда:</label>
+            </div>
+            <div class="searching-form-date-in-input">
               <input class = "label-for-date input-date-in" type="text" id="searching-date-in" name="searching-date-in" value="27 апреля 2020">
-            </p>
-            <p class="searching-form-date-out">
+            </div>
+            <div class="searching-form-date-out-label">
               <label class="form-label label-date-out" for="searching-date-out">Дата Выезда:</label>
+            </div>
+            <div class="searching-form-date-out-input">
               <input class = "label-for-date input-date-out" type="text" id="searching-date-out" name="searching-date-out" value="1 сентября 2021">
-            </p>
+            </div>
             <div class="amount-adults"> 
               <label class="form-label label-amount-adults" for="amount-of-adults">Взрослые:</label>  
-              <div class = "input-amount-adults">
-                <button type="button" class="amount_minus">-</button>
-                <input class="input-for-input" type="text" id="amount-of-adults" name="amount-of-adults" value="2">
-                <button type="button" class="amount_plus">+</button>
-              </div> 
             </div>
+            <div class = "input-amount-adults">
+              <button type="button" class="amount_minus">-</button>
+              <input class="input-for-input" type="text" id="amount-of-adults" name="amount-of-adults" value="2">
+              <button type="button" class="amount_plus">+</button>
+            </div> 
             <div class="amount-of-children"> 
               <label class="form-label label-amount-children" for="amount-of-children">Дети:</label>  
-              <div class = "input-amount-children">    
-                <button type="button" class="amount_minus">-</button>
-                <input class="input-for-input" type="text" id="amount-of-children" name="amount-of-children" value="1">
-                <button type="button" class="amount_plus">+</button>
-              </div> 
-           </div>
+            </div>
+            <div class = "input-amount-children">    
+              <button type="button" class="amount_minus">-</button>
+              <input class="input-for-input" type="text" id="amount-of-children" name="amount-of-children" value="1">
+              <button type="button" class="amount_plus">+</button>
+            </div> 
           </div>
           <button class="button button-in-form" type="submit">Найти</button>
         </form>      

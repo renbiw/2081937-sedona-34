@@ -518,7 +518,7 @@ a {
     min-width: 25px;
     min-height: 14px;
  }
- 
+
  .logo-tg {
     background-image: url("../images/tg-logo.svg");
     background-repeat: no-repeat;
@@ -539,6 +539,9 @@ a {
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
+ }
+ .contacts-phone:hover, .contacts-phone:active {
+     color: #756157;
  }
 
  /**Форма подписки на рассылку**/
@@ -856,6 +859,9 @@ input {
     width: 100%;
     border-radius: 4px;
 }
+.select-control:hover, .select-control:active {
+    border-color: #68A2CA;
+}
 
 .sorting-hotel-container {
     display: flex;
@@ -872,14 +878,20 @@ input {
     text-transform: uppercase;
 }
 
-.sorting-item-active {
+/*.sorting-item-active {
     border: 2px solid #000000;
     border-radius: 4px;
-}
+}*/
 
 .sorting-item-unactive {
     border: 2px solid #E5E5E5;
     border-radius: 4px;
+}
+.sorting-item-unactive:hover {
+    border-color: #000000;
+}
+.sorting-item-unactive:active {
+    border-color:#68A2CA;
 }
 
 .sorting-view {
@@ -1073,29 +1085,30 @@ input {
     display: flex;
     margin: 0;
     padding: 0;
+    column-gap: 8px;
 }
 
-.pagination-item:not(:last-child) {
-    margin-right: 8px;
-  }
-
-.pagination-item:first-child a {
-    color: #000000;
-    background-color: #F2F2F2;
-}
-
-.pagination-item a {
+.pagination-link {
     text-align: center;
     display: block;
     border-radius: 4px;
     width: 60px;
     height: 60px;
-    background-color: #82B3D3;
-    color: #ffffff;
-    text-transform: uppercase;
+    color: #000000;
+    padding-top: 10px;
+    background-color: #F2F2F2;
     font-size: 20px;
     line-height: 36px;
 }
+
+.pagination-link--active {
+    background-color: #82B3D3;
+    color: #ffffff;
+}
+.pagination-link--active:hover, .pagination-link--active:active {
+    background-color: #68A2CA;
+}
+
 
 .select-amount {
     margin-left: 51px;

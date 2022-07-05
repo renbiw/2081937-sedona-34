@@ -136,8 +136,15 @@ a {
     margin-bottom: -4px;
 }
 
-.active-navigation-link {
+.navigation-link {
+    padding: 20px 0;
+    display: block;
+}
+.navigation-link--active {
     border-bottom: 2px solid #756257;
+}
+.navigation-link--inactive {
+    border-bottom: 2px solid transparent;
 }
 
 .navigation {
@@ -145,7 +152,8 @@ a {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px; 
-    padding-left: 47px;
+    margin-bottom: -1px;
+    margin-left: 47px;
 }
 
 .navigation-container {
@@ -155,47 +163,44 @@ a {
 
 .navigation-list {
     list-style-type: none;
-    width: 311px;
+    column-gap: 34px;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;
   }
-
-.navigation-link {
-    padding: 20px 0;
-    display: block;
-}
   
 .navigation-user {
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     align-items: center;
     margin-left: auto;
-    column-gap: 23px;
+    column-gap: 5px;
   }
 
 .navigation-user-link {
-    padding: 0 12px;
     display: block;
 }
 
 .item-search {
     background-image: url("../images/search.svg");
     background-repeat: no-repeat; 
-    min-height: 19px;
-    min-width: 19px;
+    min-height: 40px;
+    min-width: 40px;
+    background-position: center;
 }
 
 .item-fav {
     background-image: url("../images/favorite.svg");
     background-repeat: no-repeat;
-    min-height: 19px;
-    min-width: 19px;
+    min-height: 40px;
+    min-width: 40px;
+    background-position: center;
 }
 
 .button {
@@ -208,15 +213,23 @@ a {
     font-weight: 700;
     border: none;
     text-transform: uppercase;
+    text-align: center;
+    padding: 12px 25px;
 }
 
 .button-offer {
-    margin: 14px 0 14px 32px;
+    margin-left: 28px;
     min-width: 160px;
     background-color: #756157;
     border-radius: 4px;
     display: inline-block;
     text-align: center;
+    align-self: center;
+    padding-top: 9px;
+    padding-bottom: 8px;
+}
+.button-offer:hover, .button-offer:active {
+    background-color: #615048;
 }
 
 .container-with-sedona-pictures {
@@ -235,30 +248,15 @@ a {
     flex-grow: 1;
 }
 
-.page-container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.introduction-container {
-    padding-left: 290px;
-    padding-right: 290px;
-}
-
-.introduction-container-part-two {
-    padding-left: 273px;
-    padding-right: 273px;
-}
-
 .main-introduction {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
     text-align: center;
     color: #000000;
-    padding-top: 63px;
-    padding-bottom: 31px;
+    padding: 0 180px;
     margin: 0;
+    margin-bottom: 31px;
 }
 
 .introduction-part-two{
@@ -266,7 +264,12 @@ a {
     line-height: 26px;
     text-align: center;
     margin: 0;
-    padding-bottom: 90px;
+    padding: 0 200px;
+    margin-bottom: 90px;
+}
+
+.advantages {
+    padding-top: 63px;
 }
 
 .advantages-list {
@@ -276,6 +279,7 @@ a {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    counter-reset: list 0; 
    
 }
 
@@ -295,6 +299,16 @@ a {
     background-color: #f0f6fa;
 }
 
+.advantages-item-unwrapper {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+.advantages-item-unwrapper::before{
+    counter-increment: list;
+    content: "— № " counter(list) " —";
+}
+
 .advantages-item-unwrapper:nth-child(odd) {
     background-color: #83B3D31F;
     padding: 92px 85px;
@@ -310,6 +324,7 @@ a {
     padding-bottom: 102px;
     text-align: center;
     flex: 1 1 30%;
+    list-style-type: none; 
 }
 
 .container-for-image-item-sedona {
@@ -331,13 +346,20 @@ a {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    margin: 30px 0;
+    margin: 0;
+    margin-bottom: 30px;
     padding: 0 29px;
+    order: -1;
 }
 
 .advantages-description {
     text-align: center;
     margin: 0;
+    margin-top: 30px;
+}
+
+.advantages-description-unwrapper {
+    color: #333333;
 }
 
 .advantages-item--wrapper {
@@ -352,6 +374,13 @@ a {
 .advantages-with-pic-description {
     padding: 92px 85px;
     flex: 1 1 30%;
+    list-style-type: none; 
+    display: flex;
+    flex-direction: column;
+}
+.advantages-with-pic-description::before {
+    counter-increment: list;
+    content: "— № " counter(list) " —";
 }
 
 
@@ -370,6 +399,7 @@ a {
     min-width: 75px;
     min-height: 70px;
     display: inline-block;
+    margin-bottom: 30px;
 }
 
 .food-logo {
@@ -378,6 +408,7 @@ a {
     min-width: 76px;
     min-height: 72px;
     display: inline-block;
+    margin-bottom: 30px;
 }
 
 .gift-logo {
@@ -386,15 +417,20 @@ a {
     min-width: 65px;
     min-height: 76px;
     display: inline-block;
+    margin-bottom: 30px;
 }
 
 .search-hostel {
-    padding: 91px 304px 68px;
+    padding: 91px 100px 68px;
     text-align: center;
 }
 
 .container-for-subscribe-button {
-    padding: 0 9px;
+    padding: 0 213px;
+}
+
+.subscribe-button:hover, .subscribe-button:active {
+    background-color: #68A2CA;
 }
 
 .search-title {
@@ -421,6 +457,9 @@ a {
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
+}
+.button-search:hover, .button-search:active {
+    background-color: #615048;
 }
 
 .footer-social {
@@ -542,13 +581,13 @@ a {
 }
 
 .subscribe-button {
+    min-width: 200px;
     color: #ffffff;
     background-color: #82B3D3;
     text-transform: uppercase;
     font-size: 20px;
     line-height: 36px;
     border: 0;
-    padding: 12px 30px ;
     border-top-left-radius: 0 ;
     border-bottom-left-radius: 0 ;
     border-top-right-radius: 10px ;
@@ -626,6 +665,9 @@ a {
     text-transform: uppercase;
     min-width: 100%;
     margin-top: 40px;
+}
+.button-in-form:hover, .button-in-form:active {
+    background-color: #68A2CA;
 }
 
 .searching-form input {
@@ -776,12 +818,17 @@ fieldset {
 }
 
 .button-apply-filter {
-    padding: 14px 30px;
+    min-width: 130px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #82B3D3;
     border: 0;
     margin-bottom: 20px;
+}
+.button-apply-filter:hover, .button-apply-filter:active {
+    background-color: #68A2CA;
 }
 
 .button-reset-filter {
@@ -806,7 +853,8 @@ input {
 
 .select-control {
     border: 2px solid #E5E5E5;
-    width: 100%
+    width: 100%;
+    border-radius: 4px;
 }
 
 .sorting-hotel-container {
@@ -824,49 +872,47 @@ input {
     text-transform: uppercase;
 }
 
-.sorting-item {
-    padding: 16px 17px;
-    border-radius: 4px;
-    margin-right: 8px;
-}
-
 .sorting-item-active {
     border: 2px solid #000000;
+    border-radius: 4px;
 }
 
 .sorting-item-unactive {
     border: 2px solid #E5E5E5;
+    border-radius: 4px;
 }
 
 .sorting-view {
+    column-gap: 7px;
+    padding: 0;
     margin: 0;
-}
-
-.sorting-view:last-child {
-    margin-right: 0;
+    margin-left: 78px;
 }
 
 .button-table {
     background-image: url("../images/icon-table.svg");
     background-repeat: no-repeat;
-    width: 16px;
-    height: 14px;
+    background-position: center;
+    width: 46px;
+    height: 46px;
     display: block;
 }
 
 .button-slideshow {
     background-image: url("../images/icon-slideshow.svg");
     background-repeat: no-repeat;
-    width: 16px;
-    height: 14px;
+    background-position: center;
+    width: 46px;
+    height: 46px;
     display: block;
 }
 
 .button-list {
     background-image: url("../images/icon-list.svg");
     background-repeat: no-repeat;
-    width: 16px;
-    height: 14px;
+    background-position: center;
+    width: 46px;
+    height: 46px;
     display: block;
 }
 
@@ -885,14 +931,15 @@ input {
     margin: 0;
     padding: 0 71px 46px 73px;
     margin-top: 60px;
+    column-gap: 9px;
 }
 
 .hostel-picture {
     display: block;
 }
 
-.hotel-item:not(:nth-child(3n)){
-    margin-right: 18px;
+.hotel-item {
+    padding: 20px;
 }
 
 .hotel-item img {
@@ -978,17 +1025,26 @@ input {
     margin-right: 20px;
     padding: 9px 28px 8px;
 }
+.button-more:hover, .button-more:active {
+    background-color: #615048;
+}
 
 .button-in-fav {
     font-weight: 700;
     background-color: #7DB54F; 
     padding: 9px 15px 8px;
 }
+.button-in-fav:hover, .button-in-fave:active {
+    background-color: #6C9E42;
+}
 
 .button-add-in-fav {
     font-weight: 700;
     background-color: #82B3D3;
     padding: 9px 15px 8px; 
+}
+.button-add-in-fav:hover, .button-add-in-fav:active {
+    background-color: #68A2CA;
 }
 
 .but-dec { 

@@ -454,30 +454,6 @@ a {
     color: #ffffff;
 }
 
-.logo-vk {
-    background-image: url("../images/vk-logo.svg");
-    background-repeat: no-repeat;
-    display: block;
-    min-width: 25px;
-    min-height: 14px;
- }
-
- .logo-tg {
-    background-image: url("../images/tg-logo.svg");
-    background-repeat: no-repeat;
-    display: block;
-    min-width: 18px;
-    min-height: 16px;
- }
- 
- .logo-yt {
-    background-image: url("../images/youtube-logo.svg");
-    background-repeat: no-repeat;
-    display: block;
-    min-width: 23px;
-    min-height: 18px;
- }
- 
  .contacts-phone {
     font-weight: 400;
     font-size: 40px;
@@ -716,6 +692,21 @@ a {
 
 .breadcrumbs-item {
     margin-right: 25px;
+    position: relative;
+    display: block;
+}
+.breadcrumbs-item::after{
+    position: absolute;
+    left: 22px;
+    bottom: 10px;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #ffffff !important;
+    border-right: 2px solid #ffffff !important;
+    margin: 16px 0 0 10px;
+    transform: rotate(45deg);
+    transition: 1s;
 }
 
 .breadcrumbs a {
@@ -1142,3 +1133,18 @@ input {
     border-radius: 4px;
 }
 
+
+/* Состояния svg */
+.footer-social-logo {
+    fill: #83B3D3;
+}
+.footer-social-logo:hover, .footer-social-logo:focus{
+   fill: #68A2CA;
+}
+
+.footer-social-logo-academy {
+    fill: #000000;
+}
+.footer-social-logo-academy:hover, .footer-social-logo-academy:focus {
+    fill: #756157;
+}

@@ -179,6 +179,12 @@ a {
     background-color: #82B3D3;
     position: relative;
 }
+.container-with-sedona-pictures::after {
+    background-image: url("../images/border.svg");
+    content: "";
+    position: absolute;
+    bottom: 0px;
+}
 
 .main-welcome-pic {
     position: absolute;
@@ -671,15 +677,7 @@ a {
 }
 
 /**Каталог**/
-
-.home-outs {    
-    background-position: center;
-    display: block;
-    background-image: url("../images/home.svg");
-    width: 21px;
-    height: 21px;
-    background-repeat: no-repeat;
-}
+.home-outs {}
 
 .breadcrumbs {
     font-size: 16px;
@@ -697,17 +695,20 @@ a {
 }
 .breadcrumbs-item::after{
     position: absolute;
-    left: 22px;
-    bottom: 10px;
+    left: 14px;
+    bottom: 8px;
     content: "";
-    width: 5px;
-    height: 5px;
-    border-top: 2px solid #ffffff !important;
-    border-right: 2px solid #ffffff !important;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-radius: 2px;
     margin: 16px 0 0 10px;
     transform: rotate(45deg);
-    transition: 1s;
 }
+.breadcrumbs-item:last-child::after {
+    content: none;
+  }
 
 .breadcrumbs a {
     color: #ffffff;
@@ -792,6 +793,17 @@ legend {
 .check-input {
     margin-right: 19px;
 }
+.control-input[type="check"]:checked + .control-mark::before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    color: #000000
+    background-color: #242424;
+    border-radius: 50%;
+    content: "";
+  }
 
 .catalog-filter {
     display: flex;

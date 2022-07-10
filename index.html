@@ -30,7 +30,7 @@
               <a class="navigation-user-link item-search" href="#"><span class = "visually-hidden">Поиск</span></a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link item-fav" href="#"><span class = "visually-hidden">Избранное</span></a>
+              <a class="navigation-user-link item-fav" href="#"><span class = "item-fav-count-likes">12</span><span class = "visually-hidden">Избранное</span></a>
             </li>
           </ul>  
           <a class="button button-offer" href="#">Хочу сюда!</a>
@@ -57,12 +57,12 @@
                 <li class="promo-item">
                   <span class="hostel-logo"><span class ="visually-hidden">Домик</span></span>
                   <h4 class="advantages-title">Жильё</h4>
-                  <p class="advantages-description advantages-description-unwrapper">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <p class="advantages-description advantages-description-unwrapper">Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p>
                 </li>
                 <li class="promo-item"> 
                   <span class="food-logo"><span class ="visually-hidden">Еда</span></span>
                   <h4 class="advantages-title">Еда</h4>
-                  <p class="advantages-description advantages-description-unwrapper">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="advantages-description advantages-description-unwrapper">Всегда заказывайте топовый фирменный бургер,<br> вы не разочаруетесь!</p>
                 </li>
                 <li class="promo-item">
                   <span class="gift-logo"><span class ="visually-hidden">Подарок</span></span>
@@ -143,12 +143,10 @@
           </a>
         </div>
       </footer>
-      <div>
+      <div class = "form-container modal">
         <form class="searching-form modal" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="searching-form-header">
-            <h2 class="searching-title">Поиск гостиницы в Седоне</h2>
-            <button class="button-close" type="button" >x</button> 
-          </div>
+          <h2 class="searching-title">Поиск гостиницы в Седоне</h2>
+          <button class="button-close" type="button" ><span class = "visually-hidden">Закрыть форму</span></button> 
           <div class="grid-container-searching-form">
             <div class="searching-form-date-in-label">
               <label class="form-label label-date-in" for="searching-date-in">Дата Заезда:</label>
@@ -166,17 +164,28 @@
               <label class="form-label label-amount-adults" for="amount-of-adults">Взрослые:</label>  
             </div>
             <div class = "input-amount-adults">
-              <button type="button" class="button-amount amount_minus">-</button>
+              <button type="button" class="button-amount amount_minus">
+                <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" fill="#fff"><path d="M0 6v1h13V6H0Z"/></mask><path d="M0 6v1h13V6H0Z" fill="#000"/><path d="M0 7h-1v1h1V7Zm0-1V5h-1v1h1Zm13 0h1V5h-1v1Zm0 1v1h1V7h-1ZM1 7V6h-2v1h2ZM0 7h13V5H0v2Zm12-1v1h2V6h-2Zm1 0H0v2h13V6Z" fill="#000" mask="url(#a)"/></svg>
+              </button>
               <input class="input-for-adult" type="text" id="amount-of-adults" name="amount-of-adults" value="2">
-              <button type="button" class="button-amount amount_plus">+</button>
+              <button type="button" class="button-amount amount_plus">
+                <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+              </button>
             </div> 
             <div class="amount-of-children"> 
               <label class="form-label label-amount-children" for="amount-of-children">Дети:</label>  
             </div>
+            <div class = "amount-of-children-infobutton">
+              <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/><g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+            </div>
             <div class = "input-amount-children">    
-              <button type="button" class="button-amount amount_minus">-</button>
+              <button type="button" class="button-amount amount_minus">
+                <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" fill="#fff"><path d="M0 6v1h13V6H0Z"/></mask><path d="M0 6v1h13V6H0Z" fill="#000"/><path d="M0 7h-1v1h1V7Zm0-1V5h-1v1h1Zm13 0h1V5h-1v1Zm0 1v1h1V7h-1ZM1 7V6h-2v1h2ZM0 7h13V5H0v2Zm12-1v1h2V6h-2Zm1 0H0v2h13V6Z" fill="#000" mask="url(#a)"/></svg>
+              </button>
               <input class="input-for-adult" type="text" id="amount-of-children" name="amount-of-children" value="1">
-              <button type="button" class="button-amount amount_plus">+</button>
+              <button type="button" class="button-amount amount_plus">
+                <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+              </button>
             </div> 
           </div>
           <button class="button button-in-form" type="submit">Найти</button>

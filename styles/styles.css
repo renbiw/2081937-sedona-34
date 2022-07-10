@@ -143,6 +143,23 @@ a {
     min-height: 40px;
     min-width: 40px;
     background-position: center;
+    position: relative;
+    
+}
+
+.item-fav-count-likes {
+    padding-top: 3px;
+    border-radius: 100%;
+    background-color: #7DB54F;
+    font-size: 10px;
+    line-height: 13px;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    text-align: center;
+    left: 23px;
+    top: 2px;
 }
 
 .button {
@@ -184,6 +201,8 @@ a {
     content: "";
     position: absolute;
     bottom: 0px;
+    width: 1200px;
+    height: 57px;
 }
 
 .main-welcome-pic {
@@ -255,7 +274,7 @@ a {
 }
 .advantages-item-unwrapper::before{
     counter-increment: list;
-    content: "— № " counter(list) " —";
+    content: "— №" counter(list) "—";
 }
 
 .advantages-item-unwrapper:nth-child(odd) {
@@ -525,13 +544,15 @@ a {
  /**Форма поиск гостиницы**/
 
  .modal {
-    /* display: none;*/
+     display: none;
  }
  
  .grid-container-searching-form {
+    position: relative;
     display: grid;
-    grid-template-columns: 120px 133px 80px 133px;
-    gap: 40px;
+    grid-template-columns: 155px 133px 153px 133px;
+    row-gap: 40px;
+    align-items: center;
  }
  
  .searching-form-date-in-label {
@@ -570,16 +591,28 @@ a {
     grid-column: -2/-1;
  }
 
+.form-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
 .searching-form {
     width: 715px;
     padding: 62px 70px 70px 70px;
     font-size: 20px;
     line-height: 26px;
     color: #000000;
-}
-
-.searching-form-header {
-    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 30px;
 }
 
 .searching-form-date-in {
@@ -587,14 +620,25 @@ a {
     margin-bottom: 40px;
 }
 
+.amount-of-children-infobutton {
+    position: absolute;
+    top: 194px;
+    left: 398px;
+}
+
 .button-close {
-    width: 52px;
-    height: 52px;
+    position:absolute;
+    top: 54px;
+    left: 590px;
+    background-image: url("../images/buttonclose.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 53px;
+    height: 53px;
     text-align: center;
-    background-color: #F2F2F2;
+    display: block;
     border: 3px solid  #F2F2F2;
     border-radius: 100%;
-    margin-left: 100px;
 }
 .button-close:focus {
     border-color: #83B3D3;
@@ -603,6 +647,12 @@ a {
 .label-for-date {
     width: 420px;
     height: 50px;
+    padding-left: 19px;
+    border-radius: 4px;
+}
+
+.label-amount-children {
+    padding-left: 56px;
 }
 
  p .form-label {
@@ -613,6 +663,8 @@ a {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 63px;
 }
 
 .form-label {
@@ -644,10 +696,6 @@ a {
     text-align: center;
     width: 33px;
     flex: 1 1 auto;
-}
-
-.amount-adults label, .amount-of-children label {
-    margin-right: 64px;
 }
 
 .field-amount-people {

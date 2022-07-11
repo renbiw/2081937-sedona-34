@@ -152,39 +152,44 @@
               <label class="form-label label-date-in" for="searching-date-in">Дата Заезда:</label>
             </div>
             <div class="searching-form-date-in-input">
-              <input class = "label-for-date input-date-in" type="text" id="searching-date-in" name="searching-date-in" value="27 апреля 2020">
+              <input class = "input-for-date input-date-in" type="text" id="searching-date-in" name="searching-date-in" value="27 апреля 2020">
+              <span class = "form-info-message1">Мы не сможем отправить вас в прошлое.</span>
             </div>
             <div class="searching-form-date-out-label">
               <label class="form-label label-date-out" for="searching-date-out">Дата Выезда:</label>
             </div>
             <div class="searching-form-date-out-input">
-              <input class = "label-for-date input-date-out" type="text" id="searching-date-out" name="searching-date-out" value="1 сентября 2021">
-            </div>
+              <input class = "input-for-date input-date-out" type="text" id="searching-date-out" name="searching-date-out" value="1 сентября 2021">
+              <span class = "form-info-message2">На эти даты есть свободные номера. Пока есть.</span>
+            </div> 
             <div class="amount-adults"> 
               <label class="form-label label-amount-adults" for="amount-of-adults">Взрослые:</label>  
             </div>
             <div class = "input-amount-adults">
               <button type="button" class="button-amount amount_minus">
-                <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" fill="#fff"><path d="M0 6v1h13V6H0Z"/></mask><path d="M0 6v1h13V6H0Z" fill="#000"/><path d="M0 7h-1v1h1V7Zm0-1V5h-1v1h1Zm13 0h1V5h-1v1Zm0 1v1h1V7h-1ZM1 7V6h-2v1h2ZM0 7h13V5H0v2Zm12-1v1h2V6h-2Zm1 0H0v2h13V6Z" fill="#000" mask="url(#a)"/></svg>
+                <svg class="button-amount" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" fill="#b3aeab"><path d="M0 6v1h13V6H0Z"/></mask><path d="M0 6v1h13V6H0Z" fill="#b3aeab"/><path d="M0 7h-1v1h1V7Zm0-1V5h-1v1h1Zm13 0h1V5h-1v1Zm0 1v1h1V7h-1ZM1 7V6h-2v1h2ZM0 7h13V5H0v2Zm12-1v1h2V6h-2Zm1 0H0v2h13V6Z" fill="#b3aeab" mask="url(#a)"/></svg>
               </button>
               <input class="input-for-adult" type="text" id="amount-of-adults" name="amount-of-adults" value="2">
               <button type="button" class="button-amount amount_plus">
-                <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+                <svg class="button-amount" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#b3aeab"/></svg>
               </button>
             </div> 
             <div class="amount-of-children"> 
               <label class="form-label label-amount-children" for="amount-of-children">Дети:</label>  
             </div>
-            <div class = "amount-of-children-infobutton">
-              <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/><g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+            <div class = "tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                <svg  width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle class="tooltip-icon" cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/><g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
             </div>
             <div class = "input-amount-children">    
               <button type="button" class="button-amount amount_minus">
-                <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" fill="#fff"><path d="M0 6v1h13V6H0Z"/></mask><path d="M0 6v1h13V6H0Z" fill="#000"/><path d="M0 7h-1v1h1V7Zm0-1V5h-1v1h1Zm13 0h1V5h-1v1Zm0 1v1h1V7h-1ZM1 7V6h-2v1h2ZM0 7h13V5H0v2Zm12-1v1h2V6h-2Zm1 0H0v2h13V6Z" fill="#000" mask="url(#a)"/></svg>
+                <svg class="button-amount" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" fill="#b3aeab"><path d="M0 6v1h13V6H0Z"/></mask><path d="M0 6v1h13V6H0Z" fill="#b3aeab"/><path d="M0 7h-1v1h1V7Zm0-1V5h-1v1h1Zm13 0h1V5h-1v1Zm0 1v1h1V7h-1ZM1 7V6h-2v1h2ZM0 7h13V5H0v2Zm12-1v1h2V6h-2Zm1 0H0v2h13V6Z" fill="#b3aeab" mask="url(#a)"/></svg>
               </button>
               <input class="input-for-adult" type="text" id="amount-of-children" name="amount-of-children" value="1">
               <button type="button" class="button-amount amount_plus">
-                <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+                <svg class="button-amount" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#b3aeab"/></svg>
               </button>
             </div> 
           </div>

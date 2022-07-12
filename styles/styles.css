@@ -949,7 +949,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .container-fot-input-item {
     display: flex;
     height: 21px;
-
 }
 .container-fot-input-item{
     margin-bottom: 15px;
@@ -962,12 +961,61 @@ legend {
     margin-bottom:30px;
 }
 
-.control-input {
-    margin-right:19px;
+
+.custom-checkbox__input:focus + .custom-checkbox__label::before {
+    outline: 3px solid #83B3D3;
+}
+.custom-checkbox__label {
+    display: flex;
+    align-items: center;
+}
+.custom-checkbox__label::before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-right: 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 10px;
+    
+}
+.custom-checkbox__label:hover::before {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.custom-checkbox__label:active::before {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.custom-checkbox__input:checked + .custom-checkbox__label::before {
+    background-image: url("../images/checkedstateinput.svg");
+    width: 20px;
+    height: 20px;
 }
 
-.check-input {
+
+.custom-radio_label {
+    display: flex;
+    align-items: center;
+}
+.custom-radio_label::before {
     margin-right: 19px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+}
+.custom-radio_input:focus + .custom-radio_label::before {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+}
+.custom-radio_input:checked + .custom-radio_label::before {
+    background-color: #3F5E72;
+} 
+.custom-radio_input:checked:focus + .custom-radio_label::before {
+    box-shadow: none;
+    outline: 3px solid #83B3D3;
 }
 
 .catalog-filter {
@@ -1042,29 +1090,8 @@ button {
     font: inherit;
 }
 
-
-/*Описание label, input*/
 input {
     font: inherit;
-}
-label::before {
-    content: "";
-    background-position: center;
-}
-label:hover::before {
-    background-color: rgba(255, 255, 255, 0.6);
-}
-label:active::before {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-.input:checked + label::before {
-    content: "";
-    background-image: url("../images/checkedstateinput.svg");
-    width: 20px;
-    height: 20px;
-}
-input:focus + label::before {
-    outline: 3px solid #83B3D3;
 }
 
 .select-control {

@@ -627,7 +627,7 @@ body {
 
 .tooltip {
     position: absolute;
-    top: 194px;
+    top: 190px;
     left: 398px;
 }
 
@@ -1103,6 +1103,7 @@ input[type="number"]::-webkit-inner-spin-button {
     border: 2px solid #E5E5E5;
     width: 100%;
     border-radius: 4px;
+    padding-left: 20px;
 }
 .select-control:hover, .select-control:active {
     border-color: #68A2CA;
@@ -1270,17 +1271,23 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .rating span {
     background-color: #F2F2F2;
-    padding: 9px 23px 22px 8px;
+    padding: 9px 10px 8px;
     border-radius: 4px;
     flex-grow: 1;
     margin-left: 10px;
+    min-width: 140px;
+    text-align: center;
+}
+
+.buttons-info-about-hostel {
+    display: flex;
+    column-gap: 20px;
 }
 
 .button-more {
     font-weight: 700;
     background-color: #756157;
-    margin-right: 20px;
-    padding: 9px 28px 8px;
+    padding: 9px 15px 8px;
 }
 .button-more:hover, .button-more:active {
     background-color: #615048;
@@ -1305,11 +1312,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .but-dec { 
+    text-align: center;
+    flex: 1 1 140px;
     border-radius: 4px;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
+    display: inline-block;
 }
 
 

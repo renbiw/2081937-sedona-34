@@ -350,7 +350,7 @@ body {
 }
 .advantages-with-pic-description::before {
     counter-increment: list;
-    content: "— № " counter(list) " —";
+    content: "— №" counter(list) "—";
 }
 
 
@@ -715,6 +715,10 @@ body {
 }
 
 .input-for-date {
+    font: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     width: 420px;
     height: 50px;
     padding-left: 19px;
@@ -770,6 +774,10 @@ body {
 }
 
 .input-for-adult {
+    font: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     padding: 12px 4px;
     text-align: center;
     width: 33px;

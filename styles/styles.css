@@ -121,8 +121,7 @@ body {
     flex-wrap: wrap;
     list-style-type: none;
     align-items: center;
-    margin-left: auto;
-    column-gap: 5px;
+    margin-left: 303px;
   }
 
 .navigation-user-link {
@@ -180,7 +179,7 @@ body {
 }
 
 .button-offer {
-    margin-left: 28px;
+    margin-left: 21px;
     min-width: 160px;
     background-color: #756157;
     border-radius: 4px;
@@ -281,12 +280,12 @@ body {
 
 .advantages-item-unwrapper:nth-child(odd) {
     background-color: #83B3D31F;
-    padding: 92px 85px;
+    padding: 97px 85px;
 }
 
 .advantages-item-unwrapper:nth-child(even) {
     background-color: #83B3D333;
-    padding: 92px 85px;
+    padding: 97px 85px;
 }
 
 .advantages-item {
@@ -369,7 +368,7 @@ body {
     min-width: 75px;
     min-height: 70px;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .food-logo {
@@ -378,7 +377,7 @@ body {
     min-width: 76px;
     min-height: 72px;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .gift-logo {
@@ -387,16 +386,16 @@ body {
     min-width: 65px;
     min-height: 76px;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .search-hostel {
-    padding: 91px 100px 68px;
+    padding: 95px 105px 55px;
     text-align: center;
 }
 
 .container-for-subscribe-button {
-    padding: 0 213px;
+    padding: 0 210px 15px 210px;
 }
 
 .subscribe-button:hover, .subscribe-button:active {
@@ -456,7 +455,7 @@ body {
 }
 
 .footer-wrapper {
-    color: #ffffff;
+    background-color: #3F5E72;
     background-size: cover;
     background-image: url("../images/blured-sedona-footer.jpg");
     background-repeat: no-repeat;
@@ -501,13 +500,14 @@ body {
 .container-for-subs-title {
     padding-left: 163px;
     padding-right: 164px;
+    margin-bottom: 45px;
 }
 
 .subs-content {
     text-align: center;
     font-size: 22px;
     line-height: 26px;
-    padding-bottom: 24px;
+    margin: 29px 0;
 }
 
 .subs-form {
@@ -857,12 +857,13 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 .field-wrapper {
+    background-color: #3F5E72;
     color: #ffffff;
     background-size: cover;
     background-image: url("../images/blured-sedona-form.jpg");
     background-repeat: no-repeat;
     display: block;
-    padding: 35px 70px 70px;
+    padding: 35px 70px 52px 70px;
 
 }
 
@@ -880,18 +881,18 @@ input[type="number"]::-webkit-inner-spin-button {
     width:144px;
     height:48px;
     border: 2px solid #FFFFFF;
-    padding: 14px 0 13px 19px;
+    padding: 19px 0 13px 15px;
 }
 
 .cost-choosing{
     position: relative;
     right: 14px;
-    top: 12px;   
+    top: 15px;   
     opacity: 30%;
 }
 
 .cost-choosing-to {
-    right: 30px;
+    right: 35px;
 }
 
 .scrollbar-active-line {
@@ -909,7 +910,7 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: #61615c;
     height: 55px;
     transform: rotate(90deg);
-    top: 50px;
+    top: 53px;
     left: -50px;
 }
 
@@ -921,7 +922,7 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 227px;
     transform: rotate(90deg);
     left: -194px;
-    top: -36px;
+    top: -33px;
 }
 
 .scrollbar-active-button-from {
@@ -931,7 +932,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 20px;
     height: 20px;
     left: -307px;
-    top: 68px;
+    top: 70px;
 }
 
 .scrollbar-active-button-to {
@@ -940,8 +941,8 @@ input[type="number"]::-webkit-inner-spin-button {
     border-radius: 5px;
     width: 20px;
     height: 20px;
-    top: 68px;
-    left: -82px;
+    top: 70px;
+    left: -90px;
 }
 
 .field-input-value-from {
@@ -964,6 +965,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .form-field {
+    padding: 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -1030,7 +1032,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .catalog-filter {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     color: #ffffff;
     line-height: 21px;
 }
@@ -1052,25 +1053,25 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .filter-cost-title {
     flex-direction: row;
-
+    margin-left: 95px;
 }
 
 .button-container {
-    padding-bottom: 20px;
+    margin-left: -20px;
+    padding-bottom: 13px;
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
 .button-apply-filter {
-    min-width: 130px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    min-width: 160px;
+    padding: 14px;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #82B3D3;
     border: 0;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 }
 .button-apply-filter:hover, .button-apply-filter:active {
     background-color: #68A2CA;
@@ -1100,10 +1101,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .select-control {
+    font: inherit;
     border: 2px solid #E5E5E5;
     width: 100%;
     border-radius: 4px;
-    padding-left: 20px;
+    padding-left: 18px;
 }
 .select-control:hover, .select-control:active {
     border-color: #68A2CA;
@@ -1113,10 +1115,11 @@ input[type="number"]::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-between;
     padding-left: 72px;
-    padding-top: 62px;
+    padding-top: 58px;
 }
 
 .hotel-amount {
+    padding-top: 5px;
     color: #000000;
     font-weight: 700;
     font-size: 30px;
@@ -1188,7 +1191,7 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: space-between;
     margin: 0;
     padding: 0 71px 46px 73px;
-    margin-top: 60px;
+    margin-top: 55px;
     column-gap: 9px;
 }
 
@@ -1197,7 +1200,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hotel-item {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .hotel-item img {
@@ -1214,7 +1217,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .item-text span {
-    flex: 0 0  55%;
+    flex: 0 0  53%;
 }
 
 .item-text-hostel {
@@ -1238,7 +1241,7 @@ input[type="number"]::-webkit-inner-spin-button {
     line-height: 20px;
     text-transform: uppercase;  
     display: flex;
-    margin: 24px 0 20px 0;
+    margin: 17px 0 0 0;
     max-height: 38px;
     flex-wrap: nowrap;
 }
@@ -1327,7 +1330,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 1057px;
     margin: 0 auto;
     margin-left: 73px;
-    padding-top: 30px; 
+    padding-top: 50px;
 }
 
 .pagination-container {
@@ -1366,13 +1369,18 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 .select-amount {
+    font: inherit;
     margin-left: 51px;
     width: 160px;
     height: 40px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
+    padding-left: 10px;
 }
 
+.select-amount-container {
+    padding-top: 10px;
+}
 
 /* Состояния svg */
 .footer-social-logo {

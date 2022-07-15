@@ -122,6 +122,7 @@ body {
     list-style-type: none;
     align-items: center;
     margin-left: 303px;
+    flex-shrink: 0;
   }
 
 .navigation-user-link {
@@ -358,6 +359,7 @@ body {
 }
 
 .promo-item {
+    max-width: 400px;
     flex: 1 1 30%;
     padding: 80px 85px;
 }

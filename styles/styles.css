@@ -226,7 +226,7 @@ body {
     color: #000000;
     padding: 0 180px;
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 }
 
 .introduction-part-two{
@@ -360,7 +360,7 @@ body {
 .promo-item {
     max-width: 400px;
     flex: 1 1 30%;
-    padding: 80px 45px;
+    padding: 80px 45px 76px;
 }
 
 .hostel-logo {
@@ -391,7 +391,7 @@ body {
 }
 
 .search-hostel {
-    padding: 95px 105px 55px;
+    padding: 90px 105px 55px;
     text-align: center;
 }
 
@@ -449,6 +449,7 @@ body {
     list-style: none;
     max-width: 448px;
     padding-left: 12px;
+    margin-right: 12px;
 }
 
 .footer-social-item:not(:last-child) {

@@ -486,6 +486,7 @@ body {
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
+    margin-bottom: 6px;
  }
  .contacts-phone:hover, .contacts-phone:active {
      color: #756157;
@@ -1109,12 +1110,21 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 100%;
     border-radius: 4px;
     padding-left: 18px;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../images/arrowselectorblack.svg");
+    background-repeat: no-repeat;
+    background-position-x: 257px;
+    background-position-y: 17px;
 }
 .select-control:hover, .select-control:active {
     border-color: #68A2CA;
 }
-.select-control::after {
-    font-size: 22px;
+.select-control:disabled {
+    background-image: url("../images/arrowselectorgray.svg");
 }
 
 .sorting-hotel-container {
@@ -1150,7 +1160,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .sorting-view {
-    column-gap: 7px;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    column-gap: 10px;
     padding: 0;
     margin: 0;
     margin-left: 78px;
@@ -1181,12 +1194,6 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 46px;
     height: 46px;
     display: block;
-}
-
-.sorting-view {
-    display: flex;
-    flex-wrap: nowrap;
-    list-style: none;
 }
 
 /**Карточки каталога**/
@@ -1383,10 +1390,19 @@ input[type="number"]::-webkit-inner-spin-button {
     border: 2px solid #E5E5E5;
     border-radius: 4px;
     padding-left: 10px;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../images/arrowselectorblack.svg");
+    background-repeat: no-repeat;
+    background-position-x: 125px;
+    background-position-y: 13px;
 }
 
 .select-amount-container {
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 /* Состояния svg */
